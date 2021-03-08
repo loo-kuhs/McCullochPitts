@@ -14,8 +14,8 @@ namespace McCullochPitts
 
         public CullochPitts(int numPatrones, int numEntradas, int umbral)
         {
-            this.x = new int[numPatrones, numEntradas+1];
-            this.w = new int[numEntradas+1];
+            this.x = new int[numPatrones + 1, numEntradas + 1];
+            this.w = new int[numEntradas + 1];
             this.umbral = umbral;
         }
 
@@ -25,7 +25,7 @@ namespace McCullochPitts
 
             for (int i = 1; i < w.Length; i++)
             {
-                suma += x[patron, i] + w[i];
+                suma += x[patron, i] * w[i];
             }
 
             funcionActivacion(suma);
