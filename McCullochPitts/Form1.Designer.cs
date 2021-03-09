@@ -30,6 +30,7 @@ namespace McCullochPitts
         private void InitializeComponent()
         {
             this.btnMcCulloch = new System.Windows.Forms.Button();
+            this.btnPerceptron = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMcCulloch
@@ -42,11 +43,22 @@ namespace McCullochPitts
             this.btnMcCulloch.UseVisualStyleBackColor = true;
             this.btnMcCulloch.Click += new System.EventHandler(this.btnMcCulloch_Click);
             // 
+            // btnPerceptron
+            // 
+            this.btnPerceptron.Location = new System.Drawing.Point(266, 385);
+            this.btnPerceptron.Name = "btnPerceptron";
+            this.btnPerceptron.Size = new System.Drawing.Size(75, 23);
+            this.btnPerceptron.TabIndex = 1;
+            this.btnPerceptron.Text = "Perceptron";
+            this.btnPerceptron.UseVisualStyleBackColor = true;
+            this.btnPerceptron.Click += new System.EventHandler(this.btnPerceptron_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(691, 532);
+            this.Controls.Add(this.btnPerceptron);
             this.Controls.Add(this.btnMcCulloch);
             this.Name = "Form1";
             this.Text = "McCulloch Pitts";
@@ -57,6 +69,7 @@ namespace McCullochPitts
         #endregion
 
         private System.Windows.Forms.Button btnMcCulloch;
+        private System.Windows.Forms.Button btnPerceptron;
     }
 }
 
